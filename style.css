@@ -1,0 +1,119 @@
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 85%;
+    margin: auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "tablazat tablazat tablazat";
+    /*border: solid black 2px;*/
+}
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "bal jobb";
+}
+header>#jobb>h3 {
+    line-height: 0px;
+}
+section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "article aside";
+}
+#tablazat{
+    grid-area: tablazat;
+}
+#bal {
+    grid-area: bal;
+}
+#jobb {
+    grid-area: jobb;
+    text-align: center;
+}
+#bal>img{
+    width: 50%;
+}
+article {
+    grid-area: article;
+    text-align: justify;
+}
+aside {
+    grid-area: aside;
+}
+a{
+    text-decoration: none;
+}
+aside>img {
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 15px;
+    float: right;
+}
+table{
+    margin: 0 auto;
+
+    color: rgb(31, 31, 81);
+    border-radius: 10px;
+    border: solid grey;
+
+}
+td {
+    border-radius: 10px;
+    box-shadow: 5px 2px darkblue;
+    text-align: center;
+    background: powderblue;
+    padding: 5px;
+}
+tr:first-child {
+    font-weight: bolder;
+}
+td:first-child {
+    text-align: left;
+    background: lightcyan;
+}
+td:last-child {
+    background: lightgrey;
+}
+tr:first-child>td:nth-child(2){
+    background-color: rgb(118, 118, 181);
+}
+tr:first-child>td:nth-child(3){
+    background-color: rgb(118, 118, 181);
+}
+tr:first-child>td:nth-child(4){
+    background-color: rgb(118, 118, 181);
+}
+tr:first-child>td:nth-child(5){
+    background-color: rgb(118, 118, 181);
+}
+tr:first-child>td:nth-child(6){
+    background-color: rgb(118, 118, 181);
+}
+tr:nth-child(2)>td:nth-child(2){
+    color: red;
+    font-weight: bold;
+}
+tr:nth-child(3)>td:nth-child(5){
+    color: red;
+    font-weight: bold;
+}
+tr:nth-child(4)>td:nth-child(3){
+    color: red;
+    font-weight: bold;
+}
+td>a>img{
+    width: 100px;
+}
+section>h2 {
+    color: white;
+}
